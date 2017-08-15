@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wh2.people.ui.activities.EditUserActivity">
+    <item
+        android:id="@+id/action_search_person"
+        android:orderInCategory="100"
+        android:title="Buscar"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/action_new_person"
+        android:orderInCategory="100"
+        android:title="Nuevo"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/action_save_person"
+        android:orderInCategory="100"
+        android:title="Guardar"
+        android:icon="@android:drawable/ic_menu_save"
+        app:showAsAction="ifRoom|withText" />
+</menu>

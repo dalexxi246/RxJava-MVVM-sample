@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="user"
+            type="com.wh2.foss.people.model.User" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:titleTextColor="@android:color/white"
+            app:title="@string/app_name"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.activities.MainActivity">
+
+            <TextView
+                android:id="@+id/txt_editUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/label_main_actualizar_datos"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_editUser"
+                tools:text="ACTUALIZAR DATOS" />
+
+            <ImageButton
+                android:id="@+id/btn_editUser"
+                android:layout_width="240dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:srcCompat="@drawable/ic_lead_pencil_grey600_48dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="8dp" />
+
+            <ImageButton
+                android:id="@+id/btn_newUser"
+                android:layout_width="240dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.55"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/guideline2"
+                app:srcCompat="@drawable/ic_account_plus_grey600_48dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="8dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="640dp" />
+
+            <TextView
+                android:id="@+id/txt_labelNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/label_main_nuevo"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/btn_newUser"
+                tools:text="NUEVO" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txt_lastSessionDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-18dp"
+                android:layout_marginStart="-18dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/label_main_ultimo_acceso"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_username"
+                app:layout_constraintTop_toBottomOf="@+id/txt_username"
+                tools:text="Ultimo acceso: 2017-06-07, 5:30 PM" />
+
+            <TextView
+                android:id="@+id/txt_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/label_main_usuario"
+                tools:text="Sesion de Wilmer Alexis Hurtado"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,135 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="com.wh2.foss.people.ui.viewmodels.PersonViewModel" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <Spinner
+                android:id="@+id/spin_tipdoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:spinnerMode="dropdown" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edtx_nrodoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp">
+
+                <EditText
+                    android:id="@+id/txt_nrodoc"
+                    android:maxLength="11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_person_numero_de_documento"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:text="@{vm.documentNumber}" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edtx_nombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp">
+
+                <EditText
+                    android:id="@+id/txt_nombres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_person_nombres"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:text="@{vm.firstName}" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edtx_apellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <EditText
+                    android:id="@+id/txt_apellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_person_apellidos"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:text="@{vm.lastName}" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edtx_direccionResidencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp">
+
+                <EditText
+                    android:id="@+id/txt_direccionResidencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_person_direccion_de_residencia"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:text="@{vm.homeAddress}" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edtx_telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp">
+
+                <EditText
+                    android:id="@+id/txt_telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_person_numero_de_tefefono"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:text="@{vm.phone}" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edtx_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <EditText
+                    android:id="@+id/txt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_person_correo_electronico"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:text="@{vm.email}" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

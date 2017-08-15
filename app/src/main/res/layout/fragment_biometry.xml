@@ -1,0 +1,82 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="vm"
+            type="com.wh2.foss.people.ui.viewmodels.PersonViewModel" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/app_bar_height"
+            tools:context=".ui.fragments.BiometryFragment">
+
+            <ImageButton
+                android:id="@+id/btn_takePhoto"
+                android:layout_width="72dp"
+                android:layout_height="274dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/accesibility_logo"
+                app:layout_constraintBottom_toBottomOf="@+id/img_photo"
+                app:layout_constraintLeft_toRightOf="@+id/img_photo"
+                app:layout_constraintTop_toTopOf="@+id/label_foto"
+                app:srcCompat="@drawable/ic_add_photo" />
+
+            <ImageView
+                android:id="@+id/img_photo"
+                android:layout_width="270dp"
+                android:layout_height="220dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="107dp"
+                android:background="@android:color/darker_gray"
+                android:contentDescription="@string/accesibility_logo"
+                app:layout_constraintHorizontal_bias="0.422"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_add_photo" />
+
+            <TextView
+                android:id="@+id/label_foto"
+                android:layout_width="266dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/label_foto"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/img_photo"
+                app:layout_constraintLeft_toLeftOf="@+id/img_photo"
+                app:layout_constraintRight_toRightOf="@+id/img_photo"
+                tools:text="FOTO" />
+
+            <android.support.constraint.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline3"
+                app:layout_constraintGuide_begin="180dp"
+                android:orientation="vertical" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</layout>

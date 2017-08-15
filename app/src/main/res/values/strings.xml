@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">ReactiveX</string>
+    <string name="label_login_acceder">Acceder</string>
+    <string name="label_login_email_o_id">Email o N. Identificacion</string>
+    <string name="label_login_usuario">Usuario</string>
+    <string name="label_login_clave">Clave</string>
+    <string name="label_login_contrasenna">Contraseña</string>
+    <string name="accesibility_logo">logo</string>
+    <string name="action_settings">Settings</string>
+    <string name="label_main_actualizar_datos">ACTUALIZAR DATOS</string>
+    <string name="label_main_nuevo">NUEVO</string>
+    <string name="label_main_ultimo_acceso">Ultimo acceso: %s</string>
+    <string name="label_main_usuario">Sesion de %s</string>
+
+    <string name="label_person_numero_de_documento">Numero de Documento</string>
+    <string name="label_person_nombres">Nombres</string>
+    <string name="label_person_apellidos">Apellidos</string>
+    <string name="label_person_direccion_de_residencia">Direccion de Residencia</string>
+    <string name="label_person_numero_de_tefefono">Numero de Tefefono</string>
+    <string name="label_person_correo_electronico">Correo Electronico</string>
+    <string name="label_person_inline_nombre_completo_tipo_numero" formatted="false">%1s %2s (%3s # %4s)</string>
+    <string name="label_foto">FOTO</string>
+    <string name="label_person_escriba_el_n_de_documento_o_nombre">Escriba el N. de Documento o Nombre</string>
+    <string name="label_sign">Sign</string>
+    <string name="label_guardar">Guardar</string>
+    <string name="label_descartar">Descartar</string>
+
+    <string name="message_campo_obligatorio">Campo obligatorio</string>
+    <string name="message_formato_invalido">Formato invalido</string>
+    <string name="message_credentials_invalid">Usuario y/o contraseña incorrectas</string>
+    <string name="message_login_form_error_1">Algo no esta bien. Revisa las credenciales.</string>
+    <string name="message_operation_canceled">Operacion cancelada</string>
+    <string name="message_succesfully_created_person">Persona registrada exitosamente</string>
+    <string name="message_succesfully_updated_person">Datos actalizados</string>
+
+    <string-array name="list_person_tipdoc">
+        <item>Tipo de Documento</item>
+        <item>C.C. (Cedula de ciudadania)</item>
+        <item>T.I. (Tarjeta de identidad)</item>
+        <item>R.C. (Registro civil)</item>
+        <item>P. (Pasaporte)</item>
+        <item>Otro</item>
+    </string-array>
+
+</resources>
