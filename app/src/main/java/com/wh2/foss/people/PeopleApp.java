@@ -46,7 +46,7 @@ public class PeopleApp extends Application {
         };
         FlowManager.getDatabase(PeopleDatabase.class)
                 .beginTransactionAsync(
-                        new ProcessModelTransaction.Builder<>((ProcessModelTransaction.ProcessModel<PersonTable>) (userTable, wrapper) -> userTable.save()).addAll(persons).build())
+                        new ProcessModelTransaction.Builder<>((ProcessModelTransaction.ProcessModel<PersonTable>) (personTable, wrapper) -> personTable.save()).addAll(persons).build())
                 .error((transaction, error) -> error.printStackTrace())
                 .success(transaction -> Log.i(TAG, "Persons table initialized"))
                 .build().execute();
